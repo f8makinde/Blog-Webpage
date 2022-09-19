@@ -16,6 +16,13 @@ img {
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* =================
 Typography
 ================= */
@@ -29,13 +36,13 @@ h3 {
     margin-top: 0;
 }
 
-h3 {
-    color: #1792d2;
-}
-
 h1 {
     font-size: 2rem;
     margin: 0;
+}
+
+h3 {
+    color: #1792d2;
 }
 
 a {
@@ -84,6 +91,20 @@ strong {
     margin: 2em 0;
 }
 
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.widget-recent-post-title {
+    color: #143774;
+}
+
 
 /* =================
 Layout
@@ -107,7 +128,8 @@ header {
     text-align: center;
     margin-bottom: 3em;
 }
-footer{
+
+footer {
     background:#143774;
     color: white;
     text-align: center;
@@ -115,6 +137,10 @@ footer{
 }
 
 @media (min-width: 675px) {
+    header {
+        text-align: left;
+    }
+    
     .container-flex {
         flex-direction: row;
     }
@@ -233,34 +259,19 @@ nav a:focus {
     margin-bottom: 2em;
     padding: 1em;
 }
-.widget-title,
-.widget-recent-post-title {
-    font-size: 1rem;
-}
-.widget-recent-post-title {
-    color: #143774;
-}
-.widget-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-}
- .widget-recent-post{
+
+.widget-recent-post {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #707070;
     margin-bottom: 1em;
- }
- .widget-recent-post:last-child{
+}
+
+.widget-recent-post:last-child {
     border: 0;
     margin: 0;
- }
- .widget-image{
-    order: -1;
- }
+}
 
-.image-full{
-    max-height: 600px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 1em;
+.widget-image {
+    order: -1;
 }
