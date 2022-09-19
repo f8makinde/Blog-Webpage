@@ -1,34 +1,92 @@
 body{
     margin: 0;
+    font-family: "Ubuntu", sans-serif;
 }
+ /* =================
+    Typography
+    =================  */
+     h1{
+        font-family: 'Lora', sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #143774;
+        margin: 0;
+    }
+    .subtitle{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #1792D2;
+        font-size: .75rem;
+        margin: 0;
+    }
 
-header{
+    /* =================
+Layout
+================= */
+  header{
    padding: 2em 0;
    background: #f8f8f8;
-   text-align: center;
-   color: #1792D2;
-}
-h1{
-    color: #143774;
-    font-size: 2rem;
-}
+  }
+  @media (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
 
-nav ul{
+}
+/* navigation */
+
+  nav ul{
     display: flex;
     justify-content:center;
     font-size: 1rem;
     list-style: none;
-}
-nav li{
-    margin: 0 1em;
+  }
+  nav li{
+    margin-left: 2em;
     text-transform: uppercase;
 }
+
+  @media (max-width: 675px){
+    nav ul{
+     flex-direction: column;
+
+    }
+    nav li{
+        margin: .5em 0;
+    }
+
+}
+
 nav a{
+    font-weight: 700;
     text-decoration: none;
     color: #707070;
-    border-bottom: 1px solid  #707070;
+    padding: .25em 0;
 }
 nav a:hover, nav a:focus{   
     color: #1792D2;
-    border-bottom: none;
+}
+.current-page{
+    border-bottom: 1px solid  #707070;
+}
+.current-page:hover{
+    color: #707070;
+}
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+
 }
