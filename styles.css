@@ -29,6 +29,10 @@ h3 {
     margin-top: 0;
 }
 
+h3 {
+    color: #1792d2;
+}
+
 h1 {
     font-size: 2rem;
     margin: 0;
@@ -233,6 +237,9 @@ nav a:focus {
 .widget-recent-post-title {
     font-size: 1rem;
 }
+.widget-recent-post-title {
+    color: #143774;
+}
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -251,3 +258,9 @@ nav a:focus {
     order: -1;
  }
 
+.image-full{
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
